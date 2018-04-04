@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.azatk.formarsstudio.Fragments.BlankFragment2">
+
+    <ImageButton
+        android:id="@+id/iv"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_search" />
+
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/iv"
+        android:layout_toStartOf="@+id/iv"
+        android:hint="Поиск"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="10dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="514dp"
+        android:layout_below="@+id/text"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

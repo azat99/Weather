@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/city_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toEndOf="@+id/city_tv"
+        android:layout_toRightOf="@+id/city_tv"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/temp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_tv"
+        android:layout_toEndOf="@+id/icon_iv"
+        android:layout_toRightOf="@+id/icon_iv"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/temp_tv"
+        android:layout_toEndOf="@+id/main_tv"
+        android:layout_toRightOf="@+id/main_tv" />
+
+    <TextView
+        android:id="@+id/main_tv"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_tv"
+        android:layout_alignBottom="@+id/time_tv"
+        android:layout_toEndOf="@+id/time_tv"
+        android:layout_toRightOf="@+id/time_tv"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>
